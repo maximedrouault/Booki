@@ -1,9 +1,39 @@
 /* Définition du Viewport */
 body {
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
+    padding: 0 35px 0px 35px;
   }
+
+  /* Définitions générales */
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h2,
+.city-search-filter label,
+.city-search-filter input {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 /* Définition du HEADER */
 
@@ -11,35 +41,40 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 30px 0;
+  padding: 35px 0 35px 0;
 }
 
-nav a {
-  padding: 35px;
+.nav-links a {
+  padding: 40px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 400;
   color: black;
 }
 
-nav a:hover {
+.nav-links a:hover {
   text-decoration: none;
   color: #0065FC;
   border-top: #0065FC solid 2px;
   font-weight: 500;
 }
 
-nav img {
+.logo-booki {
   width: 106px;
 }
 
-/* Définitions générales */
-
-h1 {
-  font-size: 22px;
-  font-weight: 700;
+.header-title {
+  margin: 16px 0 4px 0;
 }
 
-h2 {
-  font-size: 16px;
-  font-weight: 400;
+/* Définition du FORM */
+
+form {
+  margin: 20px 0 0 0;
+}
+
+.city-search-filter label {
+  background-color: ##F2F2F2;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
 }

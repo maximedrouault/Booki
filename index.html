@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" >
-    <title>Booki</title> 
+    <title>Booki, Trouvez votre hébergement pour des vacances de rêve.</title> 
     <link href="CSS/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +14,32 @@
 </head>
 
 <body>
+<!-- HEADER -->
     <header>
         <nav>
-            <img src="images/logo/Booki@3x.png" alt="Logo Booki">
-            <div>
+            <img src="images/logo/Booki@3x.png" alt="Logo du site Booki" class="logo-booki">
+            <div class="nav-links">
                 <a href="#">Hébergements</a>
                 <a href="#">Activités</a>
             </div>
         </nav>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h1 class="header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
     </header>
+
+<!-- FORM -->
+    <form method="get" action="#">
+        <div class="city-search-filter">
+            <label for="wanted-city"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="search" id="wanted-city" placeholder="Marseille, France" name="wanted-city">
+            <input type="submit" value="Rechercher">
+        </div>
+        <div>
+
+        </div>
+
+    </form>
+    
 </body>
 
 </html>
