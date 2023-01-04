@@ -30,12 +30,21 @@
 <!-- FORM -->
     <form method="get" action="#">
         <div class="city-search-filter">
-            <label for="wanted-city"><i class="fa-solid fa-location-dot"></i></label>
+            <label for="wanted-city" class="ico-search-filter"><i class="fa-solid fa-location-dot"></i></label>
             <input type="search" id="wanted-city" placeholder="Marseille, France" name="wanted-city">
-            <input type="submit" value="Rechercher">
+            <input type="submit" value="Rechercher" class="city-search-submit-button-desktop">
+            <input type="submit" value="&#xf002" class="city-search-submit-button-mobile">
         </div>
-        <div>
-
+        <div class="family-filter">
+            <h2 class="filter-label">Filtres</h2>
+            <a href="#" class="family-filter-link"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
+            <a href="#" class="family-filter-link"><i class="fa-solid fa-person"></i>Familial</a>
+            <a href="#" class="family-filter-link"><i class="fa-solid fa-heart"></i>Romantique</a>
+            <a href="#" class="family-filter-link"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+        </div>
+        <div class="filter-description">
+            <span class="filter-description-ico"><i class="fa-solid fa-info"></i></span>
+            <p class="filter-description-text">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
     </form>

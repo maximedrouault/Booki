@@ -17,9 +17,7 @@ h1 {
   font-weight: 700;
 }
 
-h2,
-.city-search-filter label,
-.city-search-filter input {
+h2, label, input {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -69,12 +67,115 @@ nav {
 
 /* Définition du FORM */
 
+/* Filtre par nom de la ville */
+
 form {
   margin: 20px 0 0 0;
 }
 
-.city-search-filter label {
-  background-color: ##F2F2F2;
-  width: 50px;
+.city-search-filter {
+  display: flex;
+}
+
+.ico-search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
   border-radius: 15px 0 0 15px;
+  width: 50px;
+  height: 50px;
+}
+
+#wanted-city {
+  width: 235px;
+  height: 50px;
+  border: solid 1px #F2F2F2;
+  padding-left: 15px;
+}
+
+/* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en Desktop */
+
+.city-search-submit-button-desktop {
+  width: 135px;
+  height: 50px;
+  background-color: #0065FC;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  border: none;
+}
+
+/* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en Mobile */
+/* Sera intégré dans les MEDIA-QUERIES ultérieurement */
+
+.city-search-submit-button-mobile {
+  font-family: FontAwesome, sans-serif;
+  width: 50px;
+  height: 50px;
+  background-color: #0065FC;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  display: none;
+}
+
+/* Filtre par famille */
+
+.filter-label {
+  display: flex;
+  align-items: center;
+}
+
+.family-filter {
+  display: flex;
+  margin: 32px 0 0 10px;
+  gap: 50px;
+  height: 50px;
+}
+
+.family-filter-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  border: solid 2px #F2F2F2;
+  border-radius: 25px;
+}
+
+.family-filter-link:hover {
+  background-color: #DEEBFF;
+}
+
+.family-filter i {
+  padding: 5px;
+  color: #0065FC;
+}
+
+/* Définition de la description du Filter dans FORM */
+
+.filter-description {
+  display: flex;
+  margin: 32px 0 0 5px;
+}
+
+.filter-description-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065FC;
+  border: solid 1px #F2F2F2;
+  border-radius: 25px;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+}
+
+.filter-description-text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
