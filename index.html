@@ -14,40 +14,93 @@
 </head>
 
 <body>
+
 <!-- HEADER -->
-    <header>
-        <nav>
-            <img src="images/logo/Booki@3x.png" alt="Logo du site Booki" class="logo-booki">
-            <div class="nav-links">
+
+<header>
+    <nav>
+        <img src="images/logo/Booki@3x.png" alt="Logo du site internet de Booki" class="logo-booki">
+        <div class="nav-links">
                 <a href="#">Hébergements</a>
                 <a href="#">Activités</a>
-            </div>
-        </nav>
-        <h1 class="header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-    </header>
+        </div>
+    </nav>
+    <h1 class="header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre-ville ou en pleine nature</p>
+</header>
 
 <!-- FORM -->
-    <form method="get" action="#">
-        <div class="city-search-filter">
-            <label for="wanted-city" class="ico-search-filter"><i class="fa-solid fa-location-dot"></i></label>
-            <input type="search" id="wanted-city" placeholder="Marseille, France" name="wanted-city">
-            <input type="submit" value="Rechercher" class="city-search-submit-button-desktop">
-            <input type="submit" value="&#xf002" class="city-search-submit-button-mobile">
-        </div>
-        <div class="family-filter">
-            <h2 class="filter-label">Filtres</h2>
-            <a href="#" class="family-filter-link"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
-            <a href="#" class="family-filter-link"><i class="fa-solid fa-person"></i>Familial</a>
-            <a href="#" class="family-filter-link"><i class="fa-solid fa-heart"></i>Romantique</a>
-            <a href="#" class="family-filter-link"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
-        </div>
-        <div class="filter-description">
-            <span class="filter-description-ico"><i class="fa-solid fa-info"></i></span>
-            <p class="filter-description-text">Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
 
-    </form>
+<form method="get" action="#">
+    <div class="city-search-filter">
+        <label for="wanted-city" class="ico-search-filter"><i class="fa-solid fa-location-dot"></i></label>
+        <input type="search" id="wanted-city" placeholder="Marseille, France" name="wanted-city">
+        <input type="submit" value="Rechercher" class="city-search-submit-button-desktop">
+        <input type="submit" value="&#xf002" class="city-search-submit-button-mobile">
+    </div>
+    <div class="family-filter">
+        <h2 class="filter-label">Filtres</h2>
+        <a href="#" class="family-filter-link"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
+        <a href="#" class="family-filter-link"><i class="fa-solid fa-person"></i>Familial</a>
+        <a href="#" class="family-filter-link"><i class="fa-solid fa-heart"></i>Romantique</a>
+        <a href="#" class="family-filter-link"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+    </div>
+    <div class="filter-description">
+        <span class="filter-description-ico"><i class="fa-solid fa-info"></i></span>
+        <p class="filter-description-text">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+</form>
+
+<!-- MAIN -->
+
+<main>
+
+    <!-- SECTION -->
+
+    <section>
+        <h1 class="hosting-title">Hébergements à Marseille</h1>
+
+        <a href="#" class="hosting-card">
+            <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Une chambre de l'Auberge de la Canebière à Marseille">
+            <div class="hosting-card-description">
+              <h3>Auberge de la Canebière</h3>
+              <p class="card-price-description">Nuit à partir de <strong>25€</strong></p>
+              <i class="fa-solid fa-star star-blue"></i>
+              <i class="fa-solid fa-star star-blue"></i>
+              <i class="fa-solid fa-star star-blue"></i>
+              <i class="fa-solid fa-star star-blue"></i>
+              <i class="fa-solid fa-star star-grey"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- ASIDE -->
+
+    <aside>
+        <div class="popular-hosting-title">
+            <h1>Les plus populaires</h1>
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <a href="#" class="popular-card">
+            <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Une chambre de l'hôtel Le soleil du matin">
+            <div class="popular-card-description">
+                <div>
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p class="card-price-description">Nuit à partir de <strong>128€</strong></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star star-blue"></i>
+                    <i class="fa-solid fa-star star-blue"></i>
+                    <i class="fa-solid fa-star star-blue"></i>
+                    <i class="fa-solid fa-star star-blue"></i>
+                    <i class="fa-solid fa-star star-grey"></i>
+                </div>
+            </div>
+        </a>
+    </aside>
+
+
+</main>
     
 </body>
 
