@@ -186,13 +186,12 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 1230px;
   margin-top: 37px;
 }
 
 /* Définition de la SECTION "Hébergements à Marseille" */
 
-section {
+.hosting-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -202,7 +201,7 @@ section {
   border-radius: 20px;
 }
 
-.hosting-container {
+.hosting-card-container {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -218,7 +217,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 200px;
-  width: 28%;
+  width: 27%;
   border: solid 5px #FFFFFF;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -274,7 +273,7 @@ aside {
   border-radius: 20px;
 }
 
-.popular-container {
+.popular-card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,5 +320,52 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 15px;
+  margin: 15px 15px 5px 15px;
+}
+
+.popular-card-price-description {
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Définition de la SECTION "Activités à Marseille" */
+
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 550px;
+  margin-top: 60px;
+}
+
+.activity-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  height: 445px;
+  width: 22%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.activity-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.activity-card img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.activity-card-title {
+  padding: 20px;
 }
