@@ -28,7 +28,8 @@ h3 {
   font-weight: 700;
 }
 
-p {
+p,
+.nav-links a {
   font-size: 16px;
   font-weight: 400;
 }
@@ -49,8 +50,6 @@ nav {
 
 .nav-links a {
   padding: 40px;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .nav-links a:hover {
@@ -195,7 +194,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 63%;
+  width: 65%;
   height: 625px;
   background-color: #F2F2F2;
   border-radius: 20px;
@@ -267,7 +266,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 31%;
   height: 625px;
   background-color: #F2F2F2;
   border-radius: 20px;
@@ -335,7 +334,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 550px;
+  height: 493px;
   margin-top: 60px;
 }
 
@@ -368,4 +367,29 @@ aside {
 
 .activity-card-title {
   padding: 20px;
+}
+
+/* Définition du FOOTER */
+
+footer {
+  display: flex;
+  margin-top: 60px;
+  padding: 45px 0 0 70px;  
+  height: 175px;
+  background-color: #F2F2F2;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.footer-container a {
+  margin-bottom: 12px;
 }
