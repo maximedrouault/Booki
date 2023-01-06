@@ -43,23 +43,33 @@ a {
 
 nav {
   display: flex;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0 35px 0;
 }
 
-.nav-links a {
-  padding: 40px;
+.nav-links {
+  display: flex;
+  height: 100%;
 }
 
-.nav-links a:hover {
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+}
+
+.nav-link:hover {
   color: #0065FC;
-  border-top: #0065FC solid 2px;
   font-weight: 500;
+  border-top: #0065FC solid 2px;
+
 }
 
 .logo-booki {
-  width: 106px;
+  width: 61px;
+  height: 19px;
 }
 
 .header-title {
@@ -107,7 +117,6 @@ form {
 }
 
 /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en Mobile */
-/* Sera intégré dans les MEDIA-QUERIES ultérieurement */
 
 .city-search-submit-button-mobile {
   font-family: FontAwesome, sans-serif;
@@ -130,7 +139,7 @@ form {
 .family-filter {
   display: flex;
   margin: 32px 0 0 10px;
-  gap: 50px;
+  gap: 40px;
   height: 50px;
 }
 
@@ -237,10 +246,12 @@ main {
 
 .star-blue {
   color: #0065FC;
+  font-size: 12px;
 }
 
 .star-grey {
   color: #F2F2F2;
+  font-size: 12px;
 }
 
 .card-price-description {
@@ -319,7 +330,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 15px 15px 5px 15px;
+  margin: 15px 10px 5px 15px;
 }
 
 .popular-card-price-description {
@@ -392,4 +403,77 @@ footer {
 
 .footer-container a {
   margin-bottom: 12px;
+}
+
+/* Définition du RESPONSIVE */
+
+/* Définition du RESPONSIVE pour les tablettes */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+.family-filter {
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 37px;
+}
+
+.hosting-container {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+  height: 278px;
+  margin-top: 53px;
+  gap: 20px;
+}
+
+.popular-card-container {
+  flex-direction: row;
+  width: 90%;
+}
+
+.popular-hosting-title {
+  width: 90%;
+}
+
+.popular-card-description h3 {
+  font-size: 14px;
+}
+
+}
+
+/* Définition du RESPONSIVE pour les mobiles */
+
+@media screen and (max-width: 767px) {
+
+.city-search-submit-button-desktop {
+  width: 135px;
+  height: 50px;
+  background-color: #0065FC;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  display: none;
+  }
+  
+  /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en Mobile */
+  
+.city-search-submit-button-mobile {
+  font-family: FontAwesome, sans-serif;
+  width: 50px;
+  height: 50px;
+  background-color: #0065FC;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  display: block;
+  }
+
 }
