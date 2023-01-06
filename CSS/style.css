@@ -131,23 +131,28 @@ form {
 
 /* Filtre par famille */
 
-.filter-label {
+.family-links-container {
   display: flex;
+  height: 100%;
   align-items: center;
+  gap: 40px;
+  margin-left: 30px;
 }
 
 .family-filter {
   display: flex;
+  align-items: center;
+  
   margin: 32px 0 0 10px;
-  gap: 40px;
-  height: 50px;
+  height: 46px;
 }
 
 .family-filter-link {
   display: flex;
   align-items: center;
+  height: 100%;
   justify-content: center;
-  padding: 15px;
+  padding: 0 15px 0 15px;
   font-size: 17px;
   font-weight: 700;
   border: solid 2px #F2F2F2;
@@ -411,10 +416,6 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-.family-filter {
-  gap: 20px;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -431,7 +432,7 @@ aside {
   width: 100%;
   height: 278px;
   margin-top: 53px;
-  gap: 20px;
+
 }
 
 .popular-card-container {
@@ -447,11 +448,31 @@ aside {
   font-size: 14px;
 }
 
+.activity-container {
+  height: 325px;
+}
+
+.activity-card {
+  height: 267px;
+}
+
 }
 
 /* Définition du RESPONSIVE pour les mobiles */
 
 @media screen and (max-width: 767px) {
+
+body {
+  padding: 0;
+}
+
+form,
+header h1,
+header p {
+  padding: 0 20px 0px 20px;
+}
+
+  /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en MOBILE */
 
 .city-search-submit-button-desktop {
   width: 135px;
@@ -463,8 +484,6 @@ aside {
   display: none;
   }
   
-  /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en Mobile */
-  
 .city-search-submit-button-mobile {
   font-family: FontAwesome, sans-serif;
   width: 50px;
@@ -475,5 +494,112 @@ aside {
   border: none;
   display: block;
   }
+
+/* Définition du HEADER en MOBILE */
+
+nav {
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.nav-links {
+  width: 100%;
+}
+
+.nav-link {
+  width: 50%;
+}
+
+.nav-link:hover {
+  color: #0065FC;
+  font-weight: 500;
+  border-bottom: #0065FC solid 2px;
+  border-top: none;
+
+}
+
+/* Définition du FORM en MOBILE */
+
+.family-filter {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 170px;
+  gap: 14px;
+  margin-left: 0;
+}
+
+.family-links-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+}
+
+.family-filter-link {
+  padding: 0;
+  font-size: 11px;
+  height: 46px;
+  width: 150px;
+}
+
+.family-filter-link i {
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+/* Définition du MAIN en MOBILE */
+
+main {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+aside {
+  width: 100%;
+  border-radius: 0;
+}
+
+.hosting-container {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 0;
+  background-color: #FFFFFF;
+}
+
+.hosting-title {
+  margin: 20px;
+}
+
+.hosting-card-container {
+  justify-content: space-between;
+  margin: 0;
+  height: 1345px;
+}
+
+.hosting-card {
+  width: 100%;
+}
+
+.hosting-show-more {
+  display: none;
+}
+
+/* Définition de ma SECTION Activity en MOBILE */
+
+.activity-card-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-card {
+  width: 90%;
+}
+
+
+.activity-container,
+footer {
+  display: none;
+}
 
 }
