@@ -464,6 +464,7 @@ aside {
 
 body {
   padding: 0;
+  height: 4000px;
 }
 
 form,
@@ -553,6 +554,7 @@ nav {
 main {
   flex-direction: column-reverse;
   align-items: center;
+  height: 2125px;
 }
 
 aside {
@@ -562,6 +564,7 @@ aside {
 
 .hosting-container {
   width: 90%;
+  height: 1500px;
   max-width: 400px;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -587,19 +590,39 @@ aside {
 
 /* Définition de ma SECTION Activity en MOBILE */
 
+.activity-container {
+  width: 100%;
+  height: 915px;
+  margin: 0;
+  align-items: center;
+}
+
 .activity-card-container {
+  width: 90%;
   flex-direction: column;
   align-items: center;
 }
 
 .activity-card {
   width: 90%;
+  height: 190px;
+  margin-bottom: 24px;
 }
 
+/* Définition du FOOTER en MOBILE */
 
-.activity-container,
 footer {
-  display: none;
+  width: 100%;
+  height: 350px;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+}
+
+.footer-container {
+  width: 90%;
+  height: 150px;
+  margin: 0;
 }
 
 }
