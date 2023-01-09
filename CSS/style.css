@@ -131,27 +131,26 @@ form {
 
 /* Filtre par famille */
 
-.family-links-container {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  gap: 40px;
-  margin-left: 30px;
-}
-
 .family-filter {
   display: flex;
   align-items: center;
-  
   margin: 32px 0 0 10px;
   height: 46px;
+}
+
+.family-links-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-left: 2%;
+  gap: 3%;
 }
 
 .family-filter-link {
   display: flex;
   align-items: center;
-  height: 100%;
   justify-content: center;
+  height: 100%;
   padding: 0 15px 0 15px;
   font-size: 17px;
   font-weight: 700;
@@ -199,6 +198,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 626px;
   margin-top: 37px;
 }
 
@@ -207,30 +207,41 @@ main {
 .hosting-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   width: 65%;
-  height: 625px;
+  height: 100%;
   background-color: #F2F2F2;
   border-radius: 20px;
 }
 
-.hosting-card-container {
+.hosting-title {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 23px;
+  align-items: center;
+  height: 90px;
+  width: 90%;
 }
 
-.hosting-title {
-  margin: 40px 0 0 40px;
+.hosting-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 428px;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.hosting-show-more {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 90%;
 }
 
 .hosting-card {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 27%;
+  height: 190px;
+  width: 29%;
   border: solid 5px #FFFFFF;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -238,12 +249,16 @@ main {
   border-radius: 20px;
 }
 
+.hosting-card a {
+  height: 100%;
+}
+
 .hosting-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .hosting-card img {
-  height: 124px;
+  height: 55%;
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -265,17 +280,13 @@ main {
 }
 
 .hosting-card-description {
-  margin: 8px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
 }
-
-.hosting-card-description > * {
-  margin: 0 0 4px 0;
-}
-
-.hosting-show-more {
-  margin: 30px 0 0 40px;
-}
-
 /* Définition du ASIDE "Les plus populaires" */
 
 aside {
@@ -283,7 +294,7 @@ aside {
   flex-direction: column;
   align-items: center;
   width: 31%;
-  height: 625px;
+  height: 626px;
   background-color: #F2F2F2;
   border-radius: 20px;
 }
@@ -291,17 +302,17 @@ aside {
 .popular-card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90%;
+  height: auto;
   gap: 35px;
-  margin-top: 20px;
 }
 
 .popular-hosting-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 78%;
-  margin: 40px 40px 0 40px;
+  width: 90%;
+  height: 90px;
 }
 
 .popular-hosting-title i {
@@ -312,12 +323,17 @@ aside {
   display: flex;
   flex-direction: row;
   height: 135px;
-  width: 78%;
+  width: auto;
   border: solid 5px #FFFFFF;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 20px;
+}
+
+.popular-card a {
+  display: flex;
+  width: 100%;
 }
 
 .popular-card:hover {
@@ -326,7 +342,7 @@ aside {
 
 .popular-card img {
   height: 100%;
-  width: 40%;
+  width: 32%;
   border-radius: 20px 0 0 20px;
   object-fit: cover;
 }
@@ -334,8 +350,9 @@ aside {
 .popular-card-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 15px 10px 5px 15px;
+  width: 60%;
+  justify-content: space-around;
+  margin-left: 4%;
 }
 
 .popular-card-price-description {
@@ -349,7 +366,6 @@ aside {
 .activity-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 493px;
   margin-top: 60px;
 }
@@ -357,6 +373,7 @@ aside {
 .activity-card-container {
   display: flex;
   justify-content: space-between;
+  height: auto;
   margin-top: 23px;
 }
 
@@ -377,12 +394,20 @@ aside {
 .activity-card img {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-  height: 100%;
+  height: 85%;
+  width: 100%;
   overflow: hidden;
 }
 
+.activity-card a {
+  height: 100%;
+}
+
 .activity-card-title {
-  padding: 20px;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  margin: 0 10% 0 10%;
 }
 
 /* Définition du FOOTER */
@@ -416,28 +441,55 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-main {
+/* Définition du MAIN pour les tablettes */
+
+  main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
   width: 100%;
   margin-top: 37px;
 }
+
+/* Définition du FORM pour les tablettes */
+
+.family-filter {
+  height: auto;
+}
+
+.family-links-container {
+  flex-wrap: wrap;
+  height: auto;
+  row-gap: 17px;
+}
+
+.family-filter-link {
+  height: 46px;
+}
+
+/* Définition de la SECTION "Hosting" pour les tablettes */
 
 .hosting-container {
   width: 100%;
 }
 
+/* Définition du ASIDE "Popular-hosting" pour les tablettes */
+
 aside {
   width: 100%;
-  height: 278px;
+  height: auto;
   margin-top: 53px;
-
+  padding-bottom: 50px;
 }
 
 .popular-card-container {
   flex-direction: row;
   width: 90%;
+}
+
+.popular-card {
+  width: 100%;
 }
 
 .popular-hosting-title {
@@ -448,12 +500,32 @@ aside {
   font-size: 14px;
 }
 
+/* Définition de la SECTION "Activity" pour les tablettes */
+
 .activity-container {
-  height: 325px;
+  height: 360px;
+}
+
+.activity-card-container {
+  height: 100%;
 }
 
 .activity-card {
-  height: 267px;
+  height: 100%;
+}
+
+.activity-card img {
+  height: 80%;
+}
+
+.activity-card-title {
+  height: 56px;
+}
+
+/* Définition du FOOTER pour les tablettes */
+
+footer {
+  margin-top: 100px;
 }
 
 }
@@ -462,9 +534,11 @@ aside {
 
 @media screen and (max-width: 767px) {
 
+/* Définition générale */
+
 body {
   padding: 0;
-  height: 4000px;
+  height: auto;
 }
 
 form,
@@ -473,30 +547,7 @@ header p {
   padding: 0 20px 0px 20px;
 }
 
-  /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en MOBILE */
-
-.city-search-submit-button-desktop {
-  width: 135px;
-  height: 50px;
-  background-color: #0065FC;
-  color: #FFFFFF;
-  border-radius: 0 15px 15px 0;
-  border: none;
-  display: none;
-  }
-  
-.city-search-submit-button-mobile {
-  font-family: FontAwesome, sans-serif;
-  width: 50px;
-  height: 50px;
-  background-color: #0065FC;
-  color: #FFFFFF;
-  border-radius: 0 15px 15px 0;
-  border: none;
-  display: block;
-  }
-
-/* Définition du HEADER en MOBILE */
+/* Définition du HEADER (NAV) en MOBILE */
 
 nav {
   flex-direction: column;
@@ -522,19 +573,43 @@ nav {
 
 /* Définition du FORM en MOBILE */
 
+  /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en MOBILE */
+
+  .city-search-submit-button-desktop {
+    width: 135px;
+    height: 50px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    display: none;
+    }
+    
+  .city-search-submit-button-mobile {
+    font-family: FontAwesome, sans-serif;
+    width: 50px;
+    height: 50px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    display: block;
+    }
+
 .family-filter {
   flex-direction: column;
   align-items: flex-start;
-  height: 170px;
+  height: 100%;
   gap: 14px;
   margin-left: 0;
 }
 
 .family-links-container {
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  row-gap: 17px;
 }
 
 .family-filter-link {
@@ -554,30 +629,47 @@ nav {
 main {
   flex-direction: column-reverse;
   align-items: center;
-  height: 2125px;
+  height: auto;
 }
+
+/* Définition du ASIDE "Popular-hosting" en MOBILE */
 
 aside {
   width: 100%;
   border-radius: 0;
 }
 
-.hosting-container {
+.popular-hosting-title {
   width: 90%;
-  height: 1500px;
-  max-width: 400px;
+  
+}
+
+.popular-card-container {
+  width: 90%;
+}
+
+.popular-card {
+  width: 98%;
+}
+
+/* Définition de la SECTION "Hosting" en MOBILE */
+
+.hosting-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 75px;
   border-radius: 0;
   background-color: #FFFFFF;
 }
 
 .hosting-title {
-  margin: 20px;
+  justify-content: flex-start;
 }
 
 .hosting-card-container {
-  justify-content: space-between;
+  height: 100%;
   margin: 0;
-  height: 1345px;
+  gap: 15px;
 }
 
 .hosting-card {
@@ -588,35 +680,41 @@ aside {
   display: none;
 }
 
-/* Définition de ma SECTION Activity en MOBILE */
+/* Définition de la SECTION "Activity" en MOBILE */
 
 .activity-container {
-  width: 100%;
-  height: 915px;
-  margin: 0;
-  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0 0 25px 20px;
 }
 
 .activity-card-container {
-  width: 90%;
+  width: 94%;
   flex-direction: column;
-  align-items: center;
 }
 
 .activity-card {
-  width: 90%;
+  width: 100%;
   height: 190px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+}
+
+.activity-card img {
+  height: 67%;
+}
+
+.activity-card-title {
+  height: 56px;
 }
 
 /* Définition du FOOTER en MOBILE */
 
 footer {
-  width: 100%;
-  height: 350px;
+  width: auto;
+  height: auto;
   flex-direction: column;
   margin: 0;
-  padding: 30px;
+  padding: 20px 0 0 20px;
 }
 
 .footer-container {
