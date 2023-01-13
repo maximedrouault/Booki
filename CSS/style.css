@@ -576,23 +576,10 @@ nav {
   /* Définition de l'aspect du boutton CITY-SEARCH-SUBMIT en MOBILE */
 
   .city-search-submit-button-desktop {
-    width: 135px;
-    height: 50px;
-    background-color: #0065FC;
-    color: #FFFFFF;
-    border-radius: 0 15px 15px 0;
-    border: none;
     display: none;
     }
     
   .city-search-submit-button-mobile {
-    font-family: FontAwesome, sans-serif;
-    width: 50px;
-    height: 50px;
-    background-color: #0065FC;
-    color: #FFFFFF;
-    border-radius: 0 15px 15px 0;
-    border: none;
     display: block;
     }
 
