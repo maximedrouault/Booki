@@ -25,3 +25,9 @@ Ceci est mon tout premier projet, j'ai réalisé l'ensemble du site en HTML / CS
 <a href='https://maximedrouault.vercel.app/' target="_blank"><img alt='Mon site Portfolio' src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white'/></a>
 <a href='https://www.linkedin.com/in/maximedrouault/' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white'/></a>
 <a href='https://github.com/maximedrouault' target="_blank"><img alt='Github' src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white'/></a>
+
+#### Si vous voulez tester le projet de votre côté, voici les instructions :<br>
+- Clonez le dépot :<br>
+**`https://github.com/maximedrouault/Booki.git`**
+- Ensuite, vous pouvez par exemple ouvrir **INDEX.HTML** avec **LIVE-SERVER** sur **VS-CODE**.<br>
+Cela vous permettra de lancer le Front et d'accéder à toutes les fonctionnalités.
