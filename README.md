@@ -3,7 +3,11 @@
 #### Je suis Maxime DROUAULT,
 Ceci est mon tout premier projet, j'ai réalisé l'ensemble du site en HTML / CSS à partir de la maquette Figma que vous pouvez retrouver avec le lien suivant : <a href='https://www.figma.com/file/yA7MRETzb30A4r6NUJKFjl/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?type=design&node-id=3%3A0&t=OXWj7ieXDza8HSvD-1' target="_blank">Lien vers la maquette Figma</a>
 
-##### Une attention toute particulière a été effectuée aux éléments suivants :
+<a href="https://maximedrouault.github.io/Booki/" target="_blank">
+  <img src="https://maximedrouault.vercel.app/img/booki.jpg" alt="Capture de Booki" />
+</a>
+
+##### Une attention toute particulière a été apportée aux éléments suivants :
 - Le découpage de la maquette.
 - Le respect du rendu par rapport à la maquette.
 - Le rendu "RESPONSIVE" sur tablette et mobile.
