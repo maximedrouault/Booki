@@ -18,7 +18,8 @@ Ceci est mon tout premier projet, j'ai réalisé l'ensemble du site en HTML / CS
 
 ![HTML](https://img.shields.io/badge/HTML-%23FFac45.svg?&style=for-the-badge&logo=html5&logoColor=white&color=orange)
 ![CSS](https://img.shields.io/badge/CSS-%23FFac45.svg?&style=for-the-badge&logo=css3&logoColor=white&color=blue)
-
+![RESPONSIVE](https://img.shields.io/badge/RESPONSIVE-18A303?&style=for-the-badge&logo=RESPONSIVE&logoColor=white&color=18A303)
+![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 #### Je vous propose de voir mon portfolio pour voir ce que je fais avec le lien juste ci-dessous (ME WEBSITE).
 
